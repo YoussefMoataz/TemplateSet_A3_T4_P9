@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void printDashes(){
+void printDashes() {
     cout << string(20, '-') << endl;
 }
 
@@ -38,7 +38,7 @@ public:
 
     }
 
-    bool removeItem(YM item){
+    bool removeItem(YM item) {
 
         for (int i = 0; i < Data.size(); ++i) {
             if (Data[i] == item) {
@@ -51,7 +51,7 @@ public:
 
     }
 
-    bool isMember(YM item){
+    bool isMember(YM item) {
 
         bool inSet = false;
 
@@ -63,6 +63,18 @@ public:
         }
 
         return inSet;
+
+    }
+
+    YM * getData(){
+
+        YM * data = new YM[Data.size()];
+
+        for (int i = 0; i < Data.size(); ++i) {
+            data[i] = Data[i];
+        }
+
+        return data;
 
     }
 
@@ -97,7 +109,48 @@ int main() {
 
     printDashes();
 
+    string * sD = ySet.getData();
 
+    for (int i = 0; i < 2; ++i) {
+        cout << sD[i] << " , "; // prints
+    }
+    cout << endl;
+
+    delete [] sD;
+
+//    for (int i = 0; i < sD->size(); ++i) {
+//        cout << sD[i] << " , "; // error
+//    }
+//    cout << endl;
+
+    printDashes();
+
+    YSet<int> ySet2;
+
+    ySet2.addItem(4);
+    ySet2.addItem(1);
+    ySet2.addItem(2);
+    ySet2.addItem(7);
+
+    int * sD2 = ySet2.getData();
+
+    for (int i = 0; i < 4; ++i) {
+        cout << sD2[i] << " , "; // prints
+    }
+    cout << endl;
+
+    delete [] sD2;
+
+    ySet2.addItem(99);
+
+    sD2 = ySet2.getData();
+
+    for (int i = 0; i < 5; ++i) {
+        cout << sD2[i] << " , "; // prints
+    }
+    cout << endl;
+
+    delete [] sD2;
 
     return 0;
 }
