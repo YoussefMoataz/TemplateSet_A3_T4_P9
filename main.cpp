@@ -145,6 +145,7 @@ int main() {
     ySet2.addItem(2);
     ySet2.addItem(7);
 
+    // assign the data
     int *sD2 = ySet2.getData();
 
     for (int i = 0; i < 4; ++i) {
@@ -157,6 +158,7 @@ int main() {
 
     ySet2.addItem(99);
 
+    // re-assign the data
     sD2 = ySet2.getData();
 
     for (int i = 0; i < 5; ++i) {
@@ -164,6 +166,7 @@ int main() {
     }
     cout << endl;
 
+    // delete the dynamically allocated data
     delete[] sD2;
 
     return 0;
