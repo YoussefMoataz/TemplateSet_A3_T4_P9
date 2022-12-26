@@ -82,6 +82,7 @@ public:
             data[i] = Data[i];
         }
 
+        // return a pointer to the beginning of the data
         return data;
 
     }
