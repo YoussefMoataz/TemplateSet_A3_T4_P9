@@ -152,6 +152,7 @@ int main() {
     }
     cout << endl;
 
+    // delete the dynamically allocated data
     delete[] sD2;
 
     ySet2.addItem(99);
