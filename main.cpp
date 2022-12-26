@@ -62,6 +62,7 @@ public:
 
         bool inSet = false;
 
+        // check if the item is in the set
         for (int i = 0; i < Data.size(); ++i) {
             if (Data[i] == item) {
                 inSet = true;
