@@ -47,6 +47,7 @@ public:
 
     bool removeItem(YM item) {
 
+        // remove the item from the vector
         for (int i = 0; i < Data.size(); ++i) {
             if (Data[i] == item) {
                 Data.erase(Data.begin() + i);
