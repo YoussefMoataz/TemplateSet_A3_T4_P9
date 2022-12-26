@@ -32,6 +32,7 @@ public:
             }
         }
 
+        // add element if it is not in the set already
         if (!inSet) {
             Data.push_back(item);
         }
