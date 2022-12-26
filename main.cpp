@@ -72,9 +72,9 @@ public:
 
     }
 
-    YM * getData(){
+    YM *getData() {
 
-        YM * data = new YM[Data.size()];
+        YM *data = new YM[Data.size()];
 
         for (int i = 0; i < Data.size(); ++i) {
             data[i] = Data[i];
@@ -115,14 +115,14 @@ int main() {
 
     printDashes();
 
-    string * sD = ySet.getData();
+    string *sD = ySet.getData();
 
     for (int i = 0; i < 2; ++i) {
         cout << sD[i] << " , "; // prints
     }
     cout << endl;
 
-    delete [] sD;
+    delete[] sD;
 
 //    for (int i = 0; i < sD->size(); ++i) {
 //        cout << sD[i] << " , "; // error
@@ -138,14 +138,14 @@ int main() {
     ySet2.addItem(2);
     ySet2.addItem(7);
 
-    int * sD2 = ySet2.getData();
+    int *sD2 = ySet2.getData();
 
     for (int i = 0; i < 4; ++i) {
         cout << sD2[i] << " , "; // prints
     }
     cout << endl;
 
-    delete [] sD2;
+    delete[] sD2;
 
     ySet2.addItem(99);
 
@@ -156,7 +156,7 @@ int main() {
     }
     cout << endl;
 
-    delete [] sD2;
+    delete[] sD2;
 
     return 0;
 }
