@@ -82,7 +82,7 @@ public:
             data[i] = Data[i];
         }
 
-        // return a pointer to the beginning of the data
+        // return a pointer to the beginning of the dynamically allocated data
         return data;
 
     }
