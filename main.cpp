@@ -16,6 +16,7 @@ template<typename YM>
 class YSet {
 
 private:
+    // YSet will be built over a vector
     vector<YM> Data;
 
 public:
