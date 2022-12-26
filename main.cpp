@@ -19,6 +19,7 @@ private:
     vector<YM> Data;
 
 public:
+    // default constructor
     YSet() = default;
 
     void addItem(YM item) {
